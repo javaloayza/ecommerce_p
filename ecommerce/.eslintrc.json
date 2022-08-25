@@ -1,0 +1,5 @@
+//!Enter next/babel, inside an array to make the error disappear in the index.
+
+{
+  "extends": ["next/babel","next/core-web-vitals"]
+}
