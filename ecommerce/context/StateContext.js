@@ -26,7 +26,7 @@ export const StateContext = ({ children }) => {
     
    /* Checking if the product is already in the cart. If it is, it updates the quantity of the product.
    If it is not, it adds the product to the cart. */
-    if(checkProductInCart) {
+    /* if(checkProductInCart) {
 
       const updatedCartItems = cartItems.map((cartProduct) => {
         if(cartProduct._id === product._id) return {
@@ -36,7 +36,15 @@ export const StateContext = ({ children }) => {
       })
 
       setCartItems(updatedCartItems);
-    } else {
+    } */ 
+    if(checkProductInCart) {
+      const updatedCartItems = cartItems.map((cartProduct) =>
+        ({ ...cartProduct, [cartItems.indexOf(cartProduct)]: cartProduct._id === product._id ?
+          {...cartProduct, quantity: cartProduct.quantity + quantity} : { ...cartProduct }}
+      ))
+
+      setCartItems(updatedCartItems);
+      } else {
       product.quantity = quantity;
       
       setCartItems([...cartItems, { ...product }]);

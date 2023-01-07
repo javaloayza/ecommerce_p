@@ -10,7 +10,7 @@ import Footer from './Footer';
 component you get access to that through a prop called children */
 const Layout = ({ children }) => {
   return (
-    <div className="layout">
+    <div className="layout">   
       <Head>
         <title>Pinn Store</title>
       </Head>
