@@ -2,6 +2,7 @@
 
 # dependencies
 .history
+.env
 node_modules
 /.pnp
 .pnp.js
