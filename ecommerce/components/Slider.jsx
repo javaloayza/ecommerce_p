@@ -33,7 +33,7 @@ const Slider = () => {
     <div className="carousel-inner relative w-full overflow-hidden">
       <div className="carousel-item active relative float-left w-full">
           <img
-          src="http://127.0.0.1:8887/banner1.png"
+          src="https://res.cloudinary.com/dek59rwek/image/upload/v1673654395/banner1_zpjdgy.png"
           className="block w-full"
           alt="..." 
         /> 
@@ -44,7 +44,7 @@ const Slider = () => {
       </div>
       <div className="carousel-item relative float-left w-full">
         <img
-          src="http://127.0.0.1:8887/banner2.png"
+          src="https://res.cloudinary.com/dek59rwek/image/upload/v1673654433/banner2_svnanj.png"
           className="block w-full"
           alt="..."
         />
@@ -55,7 +55,7 @@ const Slider = () => {
       </div>
       <div className="carousel-item relative float-left w-full">
         <img
-          src="http://127.0.0.1:8887/banner3.png"
+          src="https://res.cloudinary.com/dek59rwek/image/upload/v1673654433/banner3_dqnp4q.png"
           className="block w-full"
           alt="..."
         />
