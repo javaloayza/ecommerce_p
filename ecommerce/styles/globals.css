@@ -59,7 +59,7 @@ width: 100%;
 
 .track {
   position: absolute;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   will-change: transform;
   animation: marquee 15s linear infinite;
   width: 180%;
@@ -114,17 +114,18 @@ width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 25px;
   margin-top: 20px;
-  width: 100%;
+  width: 90%;
   padding: 0 30px;
 }
 .product-card{
- cursor: pointer;
+  cursor: pointer;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
- color: #324d67;
-
+  color: #324d67;
+  width: 200px;
+  height: 280px;
 }
 .product-card:hover{
   transform: scale(1.1,1.1)
@@ -139,6 +140,11 @@ width: 100%;
 
 .product-name{
   font-weight: 500;
+  font-size: 15px;
+  height: 2.6rem;
+  width: 11rem;
+  padding-top: 0.25rem;
+
 }
 .product-price{
   font-weight: 800;
@@ -462,12 +468,14 @@ padding: 30px 65px;
 
 }
 
+.image-container {
+  width: 400px;
+  height: 400px;
+}
+
 .product-detail-image{
   border-radius: 15px;
    background-color: #ebebeb;
-
-  width: 400px;
-  height: 400px;
   cursor: pointer;
   transition: .3s ease-in-out;
 }
