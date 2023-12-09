@@ -469,7 +469,7 @@ padding: 30px 65px;
 }
 
 .image-container {
-  width: 400px;
+  width: 355px;
   height: 400px;
 }
 
@@ -485,6 +485,7 @@ padding: 30px 65px;
 }
 .small-images-container{
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
 }
@@ -740,7 +741,7 @@ margin-top: 160px;
     height: 350px;
   }
   .cart-container{
-    width: 415px;
+    width: 390px;
   padding: 4px;
   }
   .cart-heading{
